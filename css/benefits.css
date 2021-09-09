@@ -107,7 +107,7 @@
   }
 
   .benefits__card {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 50px;
   }
 
@@ -116,7 +116,7 @@
   }
 
   .benefits__card-img {
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 
   .benefits__card-title {
