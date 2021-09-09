@@ -30,11 +30,14 @@
 }
 
 .benefits__card {
+  display: flex;
+  flex-direction: column;
   grid-column: span 1;
 }
 
 .benefits__card-img {
   max-width: 66px;
+  flex-grow: 1;
 }
 
 .benefits__card-icon {
@@ -64,6 +67,16 @@
 }
 
 @media screen and (max-width: 992px) {
+
+  .benefits__card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .benefits__card-img {
+    flex-grow: 1;
+  }
+
   .benefits {
     padding-bottom: 30px;
   }

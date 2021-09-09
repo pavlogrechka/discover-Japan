@@ -54,14 +54,12 @@
   opacity: .75;
 }
 
-
 .header__burger {
   position: relative;
   display: none;
   width: 40px;
   height: 28px;
 }
-
 
 .burger__line {
   position: absolute;
@@ -88,11 +86,13 @@
   display: none;
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width:992px) {
   .header {
     padding-top: 26px;
   }
+}
+
+@media screen and (max-width: 768px) {
 
   .header__burger {
     display: block;
