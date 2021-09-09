@@ -1,0 +1,99 @@
+@import 'normalize.css';
+@import 'header.css';
+@import 'promo.css';
+@import 'benefits.css';
+@import 'get-inspired.css';
+@import 'tours.css';
+@import 'top-places.css';
+@import 'videos.css';
+@import 'footer.css';
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #102746;
+
+}
+
+.wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper-lg {
+  max-width: 1262px;
+  margin: 0 auto;
+}
+
+
+.section-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+}
+
+.underlined-title {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.underlined-title::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: '';
+  width: 253px;
+  height: 3px;
+  background-color: #006DFE;
+}
+
+.all-more {
+  padding-right: 59px;
+  background: url(../img/arrow-right.svg) no-repeat right center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006DFE;
+  text-transform: uppercase;
+  transition: 0.2s all;
+}
+
+
+/* media */
+
+@media screen and (max-width:992px) {
+  .wrapper {
+    max-width: 992px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .wrapper {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .wrapper {
+    max-width: 414px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .all-more {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .underlined-title::after {
+    width: 70%;
+  }
+}

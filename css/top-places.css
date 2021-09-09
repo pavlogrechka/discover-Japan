@@ -1,0 +1,128 @@
+.top-places {
+  padding: 65px 0;
+}
+
+.top-places__title {
+  margin-bottom: 54px;
+}
+
+.top-places__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 57px;
+}
+
+.top-places__card {}
+
+.top-places__img-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+
+}
+
+.top__places__img {}
+
+.top-places__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 25px;
+  background: rgba(21, 24, 36, 0.6);
+  transition: .3s all;
+}
+
+.top-places__info:hover {
+  background: rgba(21, 24, 36, .9);
+  transition: .3s all;
+}
+
+.top-places__card-title {
+  flex-grow: 1;
+  min-width: 40%;
+  padding-right: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.top-places__card-likes {
+  padding-right: 14px;
+}
+
+.likes-counter {
+  margin-right: 4px;
+}
+
+.likes-icon {}
+
+.top-places__card-comments {}
+
+.comments-counter {
+  margin-right: 4px;
+}
+
+.comments-icon {}
+
+.top-places__text {
+  padding: 45px 0 31px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.top-places__link {
+  display: inline-block;
+  min-width: 118px;
+  padding: 12px 19px;
+  color: white;
+  text-transform: uppercase;
+  background: #006DFE;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  transition: .4s all;
+
+}
+
+.top-places__link:hover,
+.top-places__link:active,
+.top-places__link:focus {
+  background: #024daf;
+  transition: .4s all;
+}
+
+
+@media screen and (max-width: 992px) {
+  .top-places {
+    padding: 30px 0;
+  }
+
+  .top-places__wrapper {
+    padding: 0 15px;
+  }
+
+  .top-places__cards {
+    grid-gap: 20px;
+  }
+
+  .top-places__text {
+    padding: 20px 0 10px;
+  }
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:414px) {
+  .top-places__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+  }
+}

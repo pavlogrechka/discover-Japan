@@ -1,0 +1,133 @@
+.get-inspired {
+  padding: 65px 0;
+}
+
+.get-inspired__title-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.get-inspired__title {
+  margin-right: 20px;
+}
+
+.get-inspired__view-all {
+  padding-right: 59px;
+  background: url(../img/arrow-right.svg) no-repeat right center;
+  font-size: 16px;
+  line-height: 24px;
+  transition: 0.2s all;
+}
+
+.get-inspired__view-all:hover,
+.get-inspired__view-all:focus {
+  background: url(../img/arrow-right.svg) no-repeat 95% center;
+  transition: 0.2s all;
+}
+
+.get-inspired__cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.get-inspired__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.get-inspired__card:hover .get-inspired__card-img {
+  transform: scale(1.1);
+}
+
+.get-inspired__card:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+  background: rgba(21, 24, 36, 0.4);
+  z-index: 2;
+}
+
+.get-inspired__card--size-lg {
+  grid-column: span 3;
+}
+
+.get-inspired__card--size-sm {
+  grid-column: span 2;
+}
+
+.get-inspired__card-title {
+  position: absolute;
+  bottom: 27px;
+  left: 29px;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  color: white;
+  z-index: 3;
+}
+
+.get-inspired__card-img {
+  display: flex;
+  width: 100%;
+  transition: .5s;
+}
+
+.get-inspired__card-img--size-lg {
+  height: 354px;
+  object-fit: cover;
+}
+
+.get-inspired__card-img--size-sm {
+  height: 287px;
+  object-fit: cover;
+}
+
+
+
+.get-inspired__card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 5;
+}
+
+@media screen and (max-width: 992px) {
+  .get-inspired {
+    padding: 30px 0;
+  }
+
+  .get-inspired__card--size-lg {
+    grid-column: span 6;
+  }
+
+  .get-inspired__card--size-sm {
+    grid-column: span 6;
+  }
+
+  .get-inspired__card-img--size-lg {
+    height: 40vh;
+  }
+
+  .get-inspired__card-img--size-sm {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:414px) {
+  .get-inspired__title {
+    max-width: 60%;
+  }
+}

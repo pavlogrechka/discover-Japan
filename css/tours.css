@@ -1,0 +1,152 @@
+/* .tours {}
+
+.tour {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 108px;
+}
+
+.tour:first-child {
+  margin-bottom: 77px;
+}
+
+.tour:last-child {
+  flex-direction: row-reverse;
+}
+
+.tours__tour {}
+
+.tour__img-wrapper {
+  max-width: 60%;
+}
+
+.tour__img {}
+
+.tour__info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 40%;
+  justify-content: center;
+}
+
+.tour__title {
+  margin-bottom: 45px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #102746;
+}
+
+.tour__text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 58px;
+}
+
+.tour__link {
+  display: inline-block;
+  padding-right: 59px;
+  background: url(../img/arrow-right.svg) no-repeat right center;
+} */
+
+
+.tours {
+  padding: 65px 0;
+}
+
+
+.tours__tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 108px;
+  align-items: center;
+}
+
+.tour {}
+
+.tour:first-child {
+  margin-bottom: 77px;
+}
+
+.tour:last-child {}
+
+
+
+.tour__img-wrapper {}
+
+.tour__img {}
+
+.tour__info {
+  padding-left: 47px;
+}
+
+.tour__title {
+  margin-bottom: 85px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.tour__text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 58px;
+}
+
+.tour__link {
+  font-size: 16px;
+  line-height: 24px;
+  transition: 0.2s all;
+  padding-right: 59px;
+  background: url(../img/arrow-right.svg) no-repeat right center;
+  cursor: pointer;
+}
+
+.tour__link:hover {
+  background: url(../img/arrow-right.svg) no-repeat 95% center;
+  transition: 0.2s all;
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .tours {
+    padding: 30px 0;
+  }
+
+  .tours__wrapper {
+    padding: 0 15px;
+  }
+
+  .tours__tour {
+    grid-gap: 0 20px;
+  }
+
+  .tour__title {
+    margin-bottom: 25px;
+  }
+
+  .tour__text {
+    margin-bottom: 25px;
+  }
+
+  .tour__info {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 414px) {
+  .promo {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .tour {}
+
+  .tours__tour {
+    grid-gap: 0 20px;
+  }
+}

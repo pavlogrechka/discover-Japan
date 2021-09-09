@@ -1,0 +1,99 @@
+.promo {
+  min-height: 100vh;
+  padding-top: 263px;
+  padding-bottom: 223px;
+  background: url(../img/promo/promo-with-mask.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.promo__content {
+  color: #fff;
+}
+
+.promo__title {
+  max-width: 620px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  padding-bottom: 22px;
+  /* color: #fff; */
+}
+
+.promo__text {
+  max-width: 540px;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 54px;
+}
+
+.search-form__info {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 170px;
+}
+
+.search-form__field {
+  width: 297px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-weight: 500;
+  background: transparent url(../img/promo/circlel.svg) no-repeat left 8px;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 2px solid #BFC0C5;
+  margin-right: 60px;
+  color: white;
+}
+
+.search-form__field:focus {
+  border-bottom-color: #006DFE;
+}
+
+.search-form__field::placeholder {
+  color: white;
+  font-weight: 500;
+}
+
+.search-form__submit {
+  padding: 15px 39px;
+  background: #1B7DFF;
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  border: 0;
+  transition: all ease-in .4s;
+}
+
+.search-form__submit:active,
+.search-form__submit:hover,
+.search-form__submit:focus,
+.search-form__submit:focus-visible {
+  background: #1858ac;
+  color: #f3f3f3;
+  transition: all ease-in .4s;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .promo {
+    min-height: 100vh;
+    padding-top: 180px;
+    padding-bottom: 70px;
+    background: url(../img/promo/promo-with-mask.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .promo__form {}
+
+  .search-form__info {}
+
+  .search-form__field {
+    margin-bottom: 30px;
+  }
+}
