@@ -12,15 +12,24 @@
 .footer__logo-wrapper {
   flex-grow: 1;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .footer__links-wrapper {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+
+}
+
+.links__col {
+  margin-bottom: 40px;
 }
 
 .links__col:not(:last-child) {
-  margin-right: 140px;
+  /* margin-right: 140px; */
+  /* margin-right: auto; */
 }
 
 .links__col-label {
@@ -44,13 +53,18 @@
 
 @media screen and (max-width:768px) {}
 
+@media screen and (max-width: 470px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width:414px) {
   .footer__links-wrapper {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    align-items: center;
-  }
+    /* align-items: center; */  }
 
   .links__col {
     margin: 0 0 20px;

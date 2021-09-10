@@ -57,7 +57,10 @@
   margin-bottom: 39px;
 }
 
-.benefits__card-link {}
+.benefits__card-link {
+  margin-right: auto;
+
+}
 
 .benefits__card-link:hover,
 .benefits__card-link:focus {
